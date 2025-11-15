@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>U. Saivardhan — Portfolio</title>
+  <link rel="icon" href="assets/me.jpg" type="image/jpeg">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Floating Dark/Light Toggle -->
+  <div class="theme-toggle-floating" aria-hidden="false">
+    <label class="daynight-toggle" title="Toggle theme">
+      <input type="checkbox" id="day-night" />
+      <i class="fa-solid fa-sun sun" aria-hidden="true"></i>
+      <i class="fa-solid fa-moon moon" aria-hidden="true"></i>
+    </label>
+  </div>
+
+  <!-- Style switcher (accent colors) -->
+  <input id="ss-toggler" type="checkbox" hidden>
+  <div class="style__switcher" aria-hidden="false">
+    <label for="ss-toggler" class="style__switcher-toggler" title="Open theme switcher">
+      <i class="fa-solid fa-gear"></i>
+    </label>
+
+    <div class="style__panel" aria-hidden="true">
+      <h4>Accent</h4>
+      <div class="style__colors">
+        <button class="swatch" data-color="color-1" aria-label="Royal Purple"></button>
+        <button class="swatch" data-color="color-2" aria-label="Electric Blue"></button>
+        <button class="swatch" data-color="color-3" aria-label="Turquoise"></button>
+        <button class="swatch" data-color="color-4" aria-label="Golden"></button>
+        <button class="swatch" data-color="color-5" aria-label="Rose"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="header">
+    <nav class="nav container" role="navigation" aria-label="Main">
+      <a class="nav__logo" href="#home">U. Saivardhan</a>
+
+      <input id="nav__toggler" type="checkbox" hidden>
+      <label for="nav__toggler" class="nav__toggle" aria-hidden="true"><i class="fa-solid fa-bars"></i></label>
+
+      <ul class="nav__list">
+        <li><a class="nav__link active-link" href="#home">Home</a></li>
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#qualification">Experience</a></li>
+        <li><a class="nav__link" href="#projects">Projects</a></li>
+        <li><a class="nav__link" href="#skills">Skills</a></li>
+        <li><a class="nav__link" href="#certificates">Certificates</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="divider"></div>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="home container" data-reveal>
+      <div class="home-left">
+        <span class="home-small">Hello</span>
+        <h1 class="home-title">I'm <span class="accent">U. Saivardhan</span></h1>
+
+        <h2 class="role">
+          I’m a <span class="txt-rotate" data-period="2000" data-rotate='["Web Designer.", "Developer.", "Engineer."]'></span>
+        </h2>
+
+        <p class="home-desc">
+          Seeking a challenging position in a reputed organization where I can learn new skills,
+          expand my knowledge, and leverage my learnings.
+        </p>
+
+        <div class="home-actions">
+          <a class="btn" href="#contact">Hire Me</a>
+          <a class="cv-btn" href="assets/Saivardhan_resume2.pdf" download>Download CV</a>
+        </div>
+      </div>
+
+      <div class="home-right">
+        <!-- B2: glow behind rounded background -->
+        <div class="hero-bg-glow">
+          <div class="home__img--wrapper">
+            <img src="assets/me.jpg" alt="Saivardhan" class="home__img hero-floating" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about section container" data-reveal>
+      <h2 class="section__title title-left">About Me</h2>
+
+      <div class="about-card">
+        <h3 class="about-title">I'm U. Saivardhan, a Full Stack Developer</h3>
+        <p class="about__description">Seeking a challenging position in a reputed organization where I can learn new skills, expand my knowledge, and leverage my learnings.</p>
+
+        <div class="about-row">
+          <div class="about-meta">
+            <div class="meta-item"><i class="fa-solid fa-user icon"></i><div><strong>Name:</strong> Saivardhan Ullemgala</div></div>
+            <div class="meta-item"><i class="fa-solid fa-hourglass-half icon"></i><div><strong>Age:</strong> 21 Years</div></div>
+            <div class="meta-item"><i class="fa-solid fa-location-dot icon"></i><div><strong>From:</strong> Jangaon, T.S, INDIA</div></div>
+            <div class="meta-item"><i class="fa-solid fa-envelope icon"></i><div><strong>Email:</strong> <a href="mailto:saivardhanullemgala15@gmail.com">saivardhanullemgala15@gmail.com</a></div></div>
+          </div>
+        </div>
+
+        <div class="center">
+          <a href="assets/Saivardhan_resume2.pdf" class="cv-btn">MY CV</a>
+        </div>
+
+        <div class="about-socials">
+          <a class="social-lg" href="https://github.com/Saivardhan61" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a class="social-lg" href="https://www.instagram.com/saivardhan.003_" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a class="social-lg" href="https://www.linkedin.com/in/contactsaivardhan-ullemgala-thedeveloper" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUALIFICATION (education, non-accordion, compact) -->
+    <section id="qualification" class="qualification section container" data-reveal>
+      <h2 class="section__title title-center" data-title="My Journey">Qualification</h2>
+
+      <div class="education-grid">
+        <div class="edu-card">
+          <h4>Christu Jyothi Institute Of Technology and Science, Jangaon, T.S</h4>
+          <div class="edu-meta"><span class="edu-date">2022 - 2026</span><span class="edu-degree">Bachelor Of Technology (CSE)</span></div>
+          <p class="edu-desc">CGPA: 8.3</p>
+        </div>
+
+        <div class="edu-card">
+          <h4>A.B.V Junior College, Jangaon, T.S</h4>
+          <div class="edu-meta"><span class="edu-date">2020 - 2022</span><span class="edu-degree">Higher Secondary Education (XII)</span></div>
+          <p class="edu-desc">CGPA: 8.2</p>
+        </div>
+
+        <div class="edu-card">
+          <h4>R.C. Patel High School, Mumbai, Maharashtra</h4>
+          <div class="edu-meta"><span class="edu-date">2019 - 2020</span><span class="edu-degree">Secondary Education (X)</span></div>
+          <p class="edu-desc">CGPA: 8.8</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects section container" data-reveal>
+      <h2 class="section__title title-center" data-title="Projects">Projects</h2>
+
+      <div class="projects__grid">
+        <article class="project-card work__card">
+          <img class="project-img" src="assets/cc.jpg" alt="Currency Converter">
+          <div class="project-content">
+            <h3>Currency Converter</h3>
+            <p>Java-based currency converter with accurate calculations and clean UI.</p>
+            <div class="project-links">
+              <a href="https://github.com/Saivardhan61/Currencyconverter-project" class="project-icon-large" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7395056443332366336?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post" class="project-icon-large" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card work__card">
+          <img class="project-img" src="assets/eps.jpg" alt="Library Management">
+          <div class="project-content">
+            <h3>Library Management System</h3>
+            <p>File-based Management System (Java) — Books issue and manage.</p>
+            <div class="project-links">
+              <a href="https://github.com/Saivardhan61/Library_Management_System-Mini_project" class="project-icon-large" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7391759424320659456?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post" class="project-icon-large" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card work__card">
+          <img class="project-img" src="assets/sas.jpg" alt="SAS POS">
+          <div class="project-content">
+            <h3>SAS Supermarket (POS)</h3>
+            <p>Billing, stock management & PDF invoice generation.</p>
+            <div class="project-links">
+              <a href="#" class="project-icon-large" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="project-icon-large" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </article>
+
+         <article class="project-card work__card">
+          <img class="project-img" src="assets/bd.jpg" alt="Library Management">
+          <div class="project-content">
+            <h3>Blockchain Healthcare security</h3>
+            <p>Prototype for blockchain-driven secure healthcare records.</p>
+            <div class="project-links">
+              <a href="https://github.com/Saivardhan61" class="project-icon-large" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="project-icon-large" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills container" data-reveal>
+      <h2 class="section-title">Professional Skills</h2>
+
+      <div class="skills__grid">
+        <div class="skill-card">
+          <h3>HTML</h3>
+          <div class="skill-percent">85%</div>
+          <p>Developing responsive and accessible web interfaces.</p>
+          <div class="skill-bar"><div class="skill-fill" data-final="85%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <h3>CSS</h3>
+          <div class="skill-percent">80%</div>
+          <p>Building visually engaging and responsive layouts.</p>
+          <div class="skill-bar"><div class="skill-fill" data-final="80%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <h3>JavaScript</h3>
+          <div class="skill-percent">70%</div>
+          <p>Creating interactive and dynamic user experiences.</p>
+          <div class="skill-bar"><div class="skill-fill" data-final="70%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Java</h3>
+          <div class="skill-percent">85%</div>
+          <p>Building scalable and robust backend systems.</p>
+          <div class="skill-bar"><div class="skill-fill" data-final="85%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <h3>MySQL</h3>
+          <div class="skill-percent">80%</div>
+          <p>Efficient database design and optimized queries.</p>
+          <div class="skill-bar"><div class="skill-fill" data-final="80%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section class="certificates section container" id="certificates" data-reveal>
+      <h2 class="section__title title-center">My Certificates</h2>
+      <div class="cert-container">
+        <div class="cert-card">
+          <i class="fa-solid fa-award cert-icon"></i>
+          <h3 class="cert-title">Oracle Database</h3>
+          <p class="cert-sub">Oracle</p>
+          <a href="assets/Certificate _OCI .pdf" class="cert-btn" target="_blank">Show Credentials</a>
+        </div>
+        <div class="cert-card">
+          <i class="fa-solid fa-award cert-icon"></i>
+          <h3 class="cert-title">Java</h3>
+          <p class="cert-sub">Simplilearn</p>
+          <a href="assets/Certificate of  java.pdf" class="cert-btn" target="_blank">Show Credentials</a>
+        </div>
+        <div class="cert-card">
+          <i class="fa-solid fa-shield-halved cert-icon"></i>
+          <h3 class="cert-title">JP Morgan Job Simulation</h3>
+          <p class="cert-sub">Forage</p>
+          <a href="assets/certificate of jp morgan.pdf" class="cert-btn" target="_blank">Show Credentials</a>
+        </div>
+        <div class="cert-card">
+          <i class="fa-solid fa-chart-line cert-icon"></i>
+          <h3 class="cert-title">Web Development</h3>
+          <p class="cert-sub">Simplilearn</p>
+          <a href="assets/Certificate of  web dev.pdf" class="cert-btn" target="_blank">Show Credentials</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact section container" data-reveal>
+      <h2 class="section__title title-center" data-title="GET IN TOUCH">Contact Me</h2>
+
+      <div class="contact__container">
+        <div>
+          <div class="contact__item"><i class="fa-solid fa-phone contact__icon"></i><div><h3 class="contact__title">Call</h3><span class="contact__data">+91 8104840498</span></div></div>
+          <div class="contact__item"><i class="fa-solid fa-envelope contact__icon"></i><div><h3 class="contact__title">Email</h3><span class="contact__data">saivardhanullemgala15@gmail.com</span></div></div>
+          <div class="contact__item"><i class="fa-solid fa-location-dot contact__icon"></i><div><h3 class="contact__title">Address</h3><span class="contact__data">Jangaon, T.S, India</span></div></div>
+        </div>
+
+        <form class="contact__form" action="https://formspree.io/f/meqyldaz" method="POST">
+          <input class="input__control" name="name" placeholder="Name" required />
+          <input class="input__control" name="email" type="email" placeholder="Email" required />
+          <input class="input__control" name="subject" placeholder="Subject" required />
+          <textarea class="input__control textarea" name="message" placeholder="Message" required></textarea>
+          <button type="submit" class="btn contact__btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container">
+      <hr />
+      <p>&copy; 2026 U. Saivardhan — All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
